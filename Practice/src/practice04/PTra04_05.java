@@ -56,7 +56,7 @@ public class PTra04_05 {
 			}
 			if (cpuHand == 0 && myHand == 2) {
 				System.out.println("じゃんけんに勝ちました");
-				break;
+				winFlg = true;
 
 			}
 			if (cpuHand == 1 && myHand == 0) {
