@@ -23,15 +23,13 @@ public class PTra07_06 {
 			for(int i : score) {
 				sum += i;
 
-				count++;
+				count ++;
 
 
 			}
 
 		}
-		System.out.println(sum/count);
-
-
+		System.out.println(sum / count);
 
 	}
 }
