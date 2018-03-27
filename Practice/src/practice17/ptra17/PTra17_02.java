@@ -6,8 +6,6 @@
  */
 package practice17.ptra17;
 
-import practice17.common.ThrowExceptionUtil;
-
 public class PTra17_02 {
 	public static void main(String[] args) {
 		try {
@@ -25,7 +23,10 @@ public class PTra17_02 {
 		 * 以下の処理はコンパイルエラーになります。
 		 * ★ 適切な修正を行い、コンパイルエラーをなくしてください
 		 */
-		String line = ThrowExceptionUtil.inputValue();
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+
+
+		String line = scanner.nextLine();
 
 		System.out.println(line);
 	}
