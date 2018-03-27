@@ -15,10 +15,25 @@ public class PTra16_03 {
 	 * 	・親クラス（Objectクラス）のtoStringの処理を行ってください
 	 *	・その後、改行をして「PTra16_03#toString()の処理」という文字列を連結してください
 	 */
+	@Override
+	public String toString(){
+
+		String num1 = super.toString();
+		return (num1 + "\nPTra16_03#toString()の処理");
+
+
+
+	}
+
 
 	public static void main(String[] args) {
 
 		// ★ PTra16_03クラスのtoStringメソッドの内容を出力してください
+		PTra16_03 ptra16_03 = new PTra16_03();
+
+		System.out.println(ptra16_03.toString());
+
+
 
 	}
 }
