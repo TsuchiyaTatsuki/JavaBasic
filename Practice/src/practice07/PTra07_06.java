@@ -17,19 +17,18 @@ public class PTra07_06 {
 		};
 
 		// ★ 配列arrayに格納されている全ての数字の平均を出力してください
-		int sum = 0;
-		int count =0;
-		for (int[] score : array) {
-			for(int i : score) {
-				sum += i;
-
-				count ++;
-
-
+		int index = 0;
+		double total = 0;
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array[i].length; j++) {
+				total += array[i][j];
+				index++;
 			}
-
 		}
-		System.out.println(sum / count);
+		System.out.println("合計値：" + total);
+		System.out.println("値数：" + index);
+
+		System.out.println("平均値：" + (total / index));
 
 	}
 }
